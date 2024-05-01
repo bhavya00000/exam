@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import Button from './components/Button';
 import Graph from './components/Graph';
@@ -24,7 +23,7 @@ const App = () => {
       case 'cookie':
         return { flour: 100, butter: 75, sugar: 75, eggs: 1 };
       case 'donought':
-        return { flour: 250, butter: 150, sugar: 100, eggs: 2 };
+        return { flour: 150, butter: 100, sugar: 250, eggs: 50 };
       default:
         return {};
     }
@@ -34,7 +33,7 @@ const App = () => {
     <div className="container">
       <div className="center-content">
         <table className="button-table">
-          <tbody className='tb'>
+          <tbody >
             <tr >
               <td><Button name="Crossiant" className="bb" image={croissantImg} onClick={() => handleButtonClick('crossiant')} /></td>
               <td><Button name="Pancake" className="bb" image={pancakeImg} onClick={() => handleButtonClick('pancake')} /></td>
@@ -57,3 +56,5 @@ const App = () => {
 };
 
 export default App;
+
+

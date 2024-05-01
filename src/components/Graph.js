@@ -1,4 +1,3 @@
-// Graph.js
 import React from 'react';
 import Chart from 'chart.js/auto';
 
@@ -10,19 +9,19 @@ const Graph = ({ ingredients }) => {
       data: {
         labels: Object.keys(ingredients),
         datasets: [{
-          label: 'Ingredients',
+          label: 'None',
           data: Object.values(ingredients),
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
+            'rgb(238, 171, 100)',
+            'rgb(245, 127, 0)',
+            'rgb(188, 188, 188)',
+            'rgb(255, 251, 19)',
           ],
           borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
+            'rgb(238, 171, 100)',
+            'rgb(245, 127, 0)',
+            'rgb(188, 188, 188)',
+            'rgb(255, 251, 19)',
           ],
           borderWidth: 1
         }]
@@ -40,7 +39,7 @@ const Graph = ({ ingredients }) => {
   }, [ingredients]);
 
   return (
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <canvas id="myChart" width="400" height="400" ></canvas>
   );
 };
 
