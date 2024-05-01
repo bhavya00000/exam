@@ -1,0 +1,28 @@
+/* Button.css */
+
+.button {
+    flex-direction:row;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #874702;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px ;
+  }
+
+
+.button img {
+  width: 20px; 
+  height: auto; 
+  margin-bottom: 5px; 
+  padding-right: 2px;
+}
+
+
+ 
+  
